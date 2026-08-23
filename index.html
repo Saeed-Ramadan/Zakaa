@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="منصة ذكاء التعليمية - المنصة الأولى للشرح والتقييم واختبارات المنهج السعودي من الصف الأول الابتدائي حتى الصف الثالث الثانوي بأحدث وسائل التكنولوجيا.">
+  <title>منصة ذكاء التعليمية | تعلم بذُكاء.. وتفوق بثقة (المنهج السعودي)</title>
+
+  <!-- Favicon & Browser Icons -->
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="shortcut icon" type="image/png" href="images/logo.png">
+  <link rel="apple-touch-icon" href="images/logo.png">
+
+  <!-- Google Fonts: Tajawal & Cairo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Global Site Preloader (لودر تحميل الموقع الشامل بهوية ولوجو المنصة)
+       ========================================================================== -->
+  <div id="sitePreloader" class="site-preloader">
+    <div class="preloader-content">
+      <div class="preloader-logo-wrapper">
+        <div class="preloader-ring-spinner"></div>
+        <div class="preloader-ring-pulse"></div>
+        <img src="images/logo.png" alt="لوجو منصة ذكاء التعليمية" class="preloader-logo-img">
+      </div>
+      <h3 class="preloader-title">منصة ذكاء التعليمية</h3>
+      <p class="preloader-tagline">تعلم بذُكاء .. وتفوق بثقة</p>
+
+      <div class="preloader-progress-track">
+        <div class="preloader-progress-bar"></div>
+      </div>
+      <span class="preloader-status">جاري تجهيز بيئة التعلم التفاعلية...</span>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Header & Navigation Bar
+       ========================================================================== -->
+  <header class="main-header" id="header">
+    <div class="container navbar">
+      <a href="#home" class="brand-logo">
+        <img src="images/logo.png" alt="لوجو منصة ذكاء التعليمية">
+        <div class="brand-title-wrap">
+          <span class="brand-name">منصة ذكاء</span>
+          <span class="brand-tagline">للتعليم أون لاين • المنهج السعودي</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">الرئيسية</a>
+        <a href="#stages" class="nav-link">المراحل والمواد</a>
+        <a href="#special-programs" class="nav-link">برامج التأهيل</a>
+        <a href="#parents" class="nav-link">نماذج أولياء الأمور</a>
+        <a href="#honor-roll" class="nav-link">شهادات الطلاب</a>
+        <a href="#celebration" class="nav-link">حفل التكريم</a>
+        <a href="#features" class="nav-link">لماذا منصة ذكاء؟</a>
+        <a href="#reviews" class="nav-link">آراء أولياء الأمور</a>
+        <a href="#contact" class="nav-link">تواصل معنا</a>
+
+        <div class="mobile-menu-cta">
+          <button class="btn-whatsapp-full" onclick="openBookingModal('عام', 'جميع المراحل'); closeMobileMenu();">
+            <span class="wa-icon-3d"><i class="fab fa-whatsapp"></i></span>
+            <span>حجز مادة الآن عبر واتساب</span>
+          </button>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn-whatsapp-header" onclick="openBookingModal('عام', 'جميع المراحل')">
+          <span class="wa-icon-3d"><i class="fab fa-whatsapp"></i></span>
+          <span>حجز الآن</span>
+        </button>
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="قائمة التصفح">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    <div class="nav-backdrop" id="navBackdrop"></div>
+  </header>
+
+  <!-- ==========================================================================
+       Hero Section with Auto Image Slider (1.webp -> 5.webp)
+       ========================================================================== -->
+  <section class="hero-section" id="home">
+    <div class="container hero-content-grid">
+
+      <div class="hero-text-block">
+        <div class="hero-tag">
+          <i class="fas fa-certificate"></i> منصة تعليمية سعودية معتمدة
+        </div>
+        <h1 class="hero-title">
+          تعلم <span>بذكاء</span>.. وتفوق بثقة وفق المنهج السعودي الرسمي
+        </h1>
+        <p class="hero-description">
+          المنصة الشاملة لجميع المراحل الدراسية من الصف الأول الابتدائي حتى الصف الثالث الثانوي. نوفر لكم شروحات مبسطة، اختبارات تفاعلية قياسية، وشهادات تقدير معتمدة تحمل اسم الطالب ولوجو المنصة.
+        </p>
+        <div class="hero-buttons">
+          <a href="#stages" class="btn-secondary">
+            <i class="fas fa-book-reader"></i> استعراض المواد والكتب
+          </a>
+          <button class="btn-primary" onclick="document.getElementById('stages').scrollIntoView({behavior: 'smooth'})">
+            <i class="fas fa-award"></i> ابدأ خوض الاختبارات
+          </button>
+        </div>
+      </div>
+
+      <!-- Auto Slider Box -->
+      <div class="hero-slider-wrapper">
+        <div class="hero-slider" id="heroSlider">
+          <div class="slide">
+            <img src="images/1.webp" alt="منصة ذكاء - بيئة تعليمية تفاعلية">
+            <div class="slide-overlay"></div>
+          </div>
+          <div class="slide">
+            <img src="images/2.webp" alt="منصة ذكاء - متابعة واختبارات المنهج السعودي">
+            <div class="slide-overlay"></div>
+          </div>
+          <div class="slide">
+            <img src="images/3.webp" alt="منصة ذكاء - التفوق والنجاح الدراسي">
+            <div class="slide-overlay"></div>
+          </div>
+          <div class="slide">
+            <img src="images/4.webp" alt="منصة ذكاء - شروحات رقمية حديثة">
+            <div class="slide-overlay"></div>
+          </div>
+          <div class="slide">
+            <img src="images/5.webp" alt="منصة ذكاء - متابعة أولياء الأمور والطلاب">
+            <div class="slide-overlay"></div>
+          </div>
+        </div>
+
+        <button class="slider-btn prev" id="sliderPrev" aria-label="السابقة"><i class="fas fa-chevron-right"></i></button>
+        <button class="slider-btn next" id="sliderNext" aria-label="التالية"><i class="fas fa-chevron-left"></i></button>
+
+        <div class="slider-controls" id="sliderDots"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Live Zoom Classes Feature Banner (إعلان الحصص المباشرة عبر زوم)
+       ========================================================================== -->
+  <section class="zoom-live-section" id="zoom-live">
+    <div class="container">
+      <div class="zoom-live-card">
+
+        <div class="zoom-card-content">
+          <div class="zoom-3d-badge">
+            <span class="zoom-live-indicator" title="بث مباشر"></span>
+            <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
+              <path d="M4.5 7.5A2.5 2.5 0 0 1 7 5h7a2.5 2.5 0 0 1 2.5 2.5v9A2.5 2.5 0 0 1 14 19H7a2.5 2.5 0 0 1-2.5-2.5v-9zM18 9.27l3.72-2.48A1 1 0 0 1 23 7.62v8.76a1 1 0 0 1-1.28.83L18 14.73V9.27z"/>
+            </svg>
+          </div>
+
+          <div class="zoom-text-wrap">
+            <div class="zoom-header-line">
+              <span class="zoom-brand-tag"><i class="fas fa-broadcast-tower"></i> بث حي وتفاعلي</span>
+              <span class="zoom-live-pill"><span class="live-dot-pulse"></span> LIVE</span>
+            </div>
+            <h2 class="zoom-main-title">جميع الحصص والشروحات تُقدَّم <span>مباشرة (أون لاين)</span> عبر تطبيق <strong>Zoom</strong></h2>
+            <p class="zoom-subtext">شرح تفاعلي بالصوت والصورة لحظة بلحظة مع نخبة من المعلمين المتميزين، مع سبورة ذكية ومشاركة للشاشة وإمكانية تسجيل الحصص.</p>
+
+            <div class="zoom-features-pills">
+              <span class="zoom-pill"><i class="fas fa-video"></i> تفاعل صوت وصورة HD</span>
+              <span class="zoom-pill"><i class="fas fa-chalkboard-teacher"></i> سبورة ذكية وشاشة تفاعلية</span>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="zoom-card-cta">
+          <button class="btn-zoom-cta" onclick="openBookingModal('حصة مباشرة عبر زوم', 'جميع المراحل')">
+            <i class="fas fa-laptop-house"></i>
+            <span>احجز حصتك عبر زوم الآن</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Educational Stages & Subject Cards (المراحل والمواد الدراسية لكتب الوزارة)
+       ========================================================================== -->
+  <section class="py-section" id="stages">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">المناهج والصفوف الدراسية</span>
+        <h2 class="section-title">شامل لجميع المراحل من الابتدائية إلى الثانوية</h2>
+        <p class="section-subtitle">اختر المرحلة والصف الدراسي لتستعرض المواد المقررة، أو خض اختبار المادة لتحصل على شهادة تقدير فورية باسمك.</p>
+      </div>
+
+      <!-- Stage Selector Tabs -->
+      <div class="stages-tabs" id="stagesTabs"></div>
+
+      <!-- Grade Subtabs -->
+      <div class="grades-subtabs" id="gradesSubtabs"></div>
+
+      <!-- Subject Cards Grid (Designed like Saudi Ministry Textbooks 000.jpeg) -->
+      <div class="subjects-grid" id="subjectsGrid"></div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Academy Showcase Banner (بانر منصة ذكاء التعليمية الشامل)
+       ========================================================================== -->
+  <section class="banner-showcase-section" id="academy-banner">
+    <div class="container">
+      <div class="academy-banner-card" onclick="if(window.openImageLightbox) openImageLightbox('images/bannar.webp');">
+        <img src="images/bannar.webp" alt="بانر منصة ذكاء التعليمية - أكاديمية ذكاء للتعليم أون لاين" class="academy-banner-img" loading="lazy">
+        <div class="banner-zoom-badge"><i class="fas fa-search-plus"></i> انقر للتكبير والمعاينة</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Parent Portal & Forms (نماذج لأولياء الأمور)
+       ========================================================================== -->
+  <section class="py-section bg-alt" id="parents">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">خدمات أولياء الأمور</span>
+        <h2 class="section-title">نماذج خاصة بمتابعة ودعم ولي الأمر</h2>
+        <p class="section-subtitle">حرصاً منا على التواصل المستمر مع الأسرة الكريمة، يمكنكم ملء أي نموذج لتلبية احتياجات أبنائكم مباشرة.</p>
+      </div>
+
+      <div class="parents-grid">
+
+        <!-- Parent Services Info -->
+        <div class="parent-info-card">
+          <h3>رعايتكم وأبناؤكم في صدارة أولوياتنا</h3>
+          <p style="line-height: 1.7; color: #cbd5e1;">
+            تتيح منصة ذكاء التعليمية لولي الأمر متابعة دقيقة لأداء الطالب في الاختبارات والتقييمات، مع إمكانية طل استشارات تربوية مع نخبة من الخبراء بالمملكة.
+          </p>
+
+          <div class="parent-features-list">
+            <div class="parent-feature-item">
+              <i class="fas fa-chart-line"></i>
+              <div>
+                <strong style="display:block; font-size:1.1rem;">تقارير متابعة دورية</strong>
+                <span style="font-size:0.9rem; color: #cbd5e1;">متابعة نسب إنجاز الطالب ونتائج اختباراته الأكاديمية.</span>
+              </div>
+            </div>
+            <div class="parent-feature-item">
+              <i class="fas fa-user-shield"></i>
+              <div>
+                <strong style="display:block; font-size:1.1rem;">استشارات تربوية وتعليمية</strong>
+                <span style="font-size:0.9rem; color: #cbd5e1;">توجيه وإرشاد تربوي متخصص للتغلب على صعوبات التعلم.</span>
+              </div>
+            </div>
+            <div class="parent-feature-item">
+              <i class="fas fa-headset"></i>
+              <div>
+                <strong style="display:block; font-size:1.1rem;">تواصل مباشر وسريع</strong>
+                <span style="font-size:0.9rem; color: #cbd5e1;">خدمة العملاء والدعم الفني المباشر عبر الواتساب على مدار اليوم.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Parent Form Interactive Box -->
+        <div class="form-box">
+          <div class="form-tabs">
+            <button class="form-tab-btn active" data-form="tracking">طلب متابعة</button>
+            <button class="form-tab-btn" data-form="consultation">استشارة تربوية</button>
+            <button class="form-tab-btn" data-form="enrollment">تسجيل طالب جديد</button>
+          </div>
+
+          <h4 id="formTitleHeading" style="font-size: 1.15rem; font-weight: 800; color: var(--primary-blue); margin-bottom: 1.25rem;">
+            نموذج طلب متابعة مستمرة لمستوى الطالب الأكاديمي
+          </h4>
+
+          <form id="parentPortalForm">
+            <input type="hidden" id="formTypeInput" value="tracking">
+
+            <div class="form-group">
+              <label for="parentName">اسم ولي الأمر الكريم *</label>
+              <input type="text" id="parentName" class="form-control" placeholder="أدخل اسم ولي الأمر الثلاثي" required>
+            </div>
+
+            <div class="form-group">
+              <label for="parentStudentName">اسم الطالب / الطالبة *</label>
+              <input type="text" id="parentStudentName" class="form-control" placeholder="أدخل اسم الابن أو الابنة" required>
+            </div>
+
+            <div class="form-group">
+              <label for="parentStudentStage">المرحلة والصف الدراسي *</label>
+              <select id="parentStudentStage" class="form-control">
+                <option value="الابتدائية - الصف الأول حتى السادس">المرحلة الابتدائية (1-6)</option>
+                <option value="المتوسطة - الصف الأول حتى الثالث">المرحلة المتوسطة (1-3)</option>
+                <option value="الثانوية - مسارات واختبارات قياس">المرحلة الثانوية (1-3)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="parentNotes">تفاصيل الاستفسار أو الطلب</label>
+              <textarea id="parentNotes" class="form-control" placeholder="اكتب أي ملاحظات أو مواد ترغب في متابعة نتائجها..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-whatsapp-full">
+              <span class="wa-icon-3d"><i class="fab fa-whatsapp"></i></span>
+              <span>إرسال واستشارة عبر الواتساب</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Special Programs & Standardized Tests (دورات الآيلتس واختبارات القدرات)
+       ========================================================================== -->
+  <section class="py-section special-programs-section" id="special-programs">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge"><i class="fas fa-graduation-cap"></i> برامج التأهيل المتقدم والقبول الجامعي</span>
+        <h2 class="section-title">دورات الاستعداد لاختبارات IELTS والقدرات العامة</h2>
+        <p class="section-subtitle">برامج تدريبية متخصصة ومكثفة مع نخبة من الخبراء لإعداد الطلاب لتحقيق أعلى الدرجات والالتحاق بأقوى الجامعات والتخصصات.</p>
+      </div>
+
+      <div class="programs-grid">
+
+        <!-- Program 1: IELTS Preparation -->
+        <div class="program-card">
+          <div class="program-card-badge"><i class="fas fa-globe"></i> تأهيل دولي معتمد</div>
+          
+          <div class="program-img-wrapper" onclick="if(window.openImageLightbox) openImageLightbox('images/12.webp');">
+            <img src="images/12.webp" alt="دورة الاستعداد لاختبار الآيلتس IELTS - منصة ذكاء" loading="lazy" class="program-img">
+            <div class="program-zoom-hint"><i class="fas fa-search-plus"></i> انقر للتكبير والمعاينة</div>
+          </div>
+
+          <div class="program-card-content">
+            <div class="program-header-info">
+              <span class="program-tag"><i class="fas fa-award"></i> IELTS Training</span>
+              <h3 class="program-title">دورة تدريب واختبارات الآيلتس (IELTS)</h3>
+            </div>
+            <p class="program-desc">خطة تدريبية متكاملة تغطي المهارات الأربع (Listening, Reading, Writing, Speaking) مع اختبارات محاكية ومتابعة فردية مكثفة تؤهلك لأقوى الجامعات.</p>
+
+            <ul class="program-features-list">
+              <li><i class="fas fa-check-circle"></i> <span>تدريب تطبيقي مكثف على المهارات الأربعة للاختبار.</span></li>
+              <li><i class="fas fa-check-circle"></i> <span>نماذج اختبارات محاكية واقعية لكسر حاجز الرهبة ورفع الجاهزية.</span></li>
+              <li><i class="fas fa-check-circle"></i> <span>متابعة فردية وتصحيح مستمر لمهام الكتابة والمحادثة.</span></li>
+            </ul>
+
+            <button class="btn-whatsapp-full btn-program-action" onclick="openBookingModal('دورة اختبار الآيلتس IELTS', 'تأهيل جامعي دولي')">
+              <span class="wa-icon-3d"><i class="fab fa-whatsapp"></i></span>
+              <span>حجز مقعد في دورة IELTS الآن</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Program 2: Qudurat Preparation -->
+        <div class="program-card">
+          <div class="program-card-badge" style="background: linear-gradient(135deg, #0d47a1 0%, #062b52 100%);"><i class="fas fa-brain"></i> قياس والمنهج السعودي</div>
+          
+          <div class="program-img-wrapper" onclick="if(window.openImageLightbox) openImageLightbox('images/13.webp');">
+            <img src="images/13.webp" alt="دورة تدريب اختبار القدرات كمي ولفظي - منصة ذكاء" loading="lazy" class="program-img">
+            <div class="program-zoom-hint"><i class="fas fa-search-plus"></i> انقر للتكبير والمعاينة</div>
+          </div>
+
+          <div class="program-card-content">
+            <div class="program-header-info">
+              <span class="program-tag" style="background: rgba(13, 71, 161, 0.1); color: var(--primary-blue);"><i class="fas fa-calculator"></i> كمي + لفظي</span>
+              <h3 class="program-title">دورة اختبارات القدرات العامة (كمي ولفظي)</h3>
+            </div>
+            <p class="program-desc">تدريب احترافي لتأسيس وتطوير مهارات الحل السريع، مع تحديد مستوى الطالب وحل أحدث التجميعات ونماذج المحاكاة لضمان أعلى الدرجات.</p>
+
+            <ul class="program-features-list">
+              <li><i class="fas fa-check-circle"></i> <span>تدريب فردي ومجموعات مركزة لقسمي الكمي واللفظي.</span></li>
+              <li><i class="fas fa-check-circle"></i> <span>استراتيجيات وتكنيكات الحل الذكي ورفع سرعة ودقة الإجابة.</span></li>
+              <li><i class="fas fa-check-circle"></i> <span>حل أحدث التجميعات ونماذج المحاكاة للاختبار الفعلي.</span></li>
+            </ul>
+
+            <button class="btn-whatsapp-full btn-program-action" onclick="openBookingModal('دورة اختبارات القدرات (كمي ولفظي)', 'المرحلة الثانوية')">
+              <span class="wa-icon-3d"><i class="fab fa-whatsapp"></i></span>
+              <span>حجز مقعد في دورة القدرات الآن</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Honor Roll & Student Certificates Slider (شهادات الطلاب المتفوقين)
+       ========================================================================== -->
+  <section class="py-section certificates-section" id="honor-roll">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge"><i class="fas fa-medal"></i> لوحة الشرف والتميز</span>
+        <h2 class="section-title">شهادات تفوق وإنجاز طلابنا في المنهج السعودي</h2>
+        <p class="section-subtitle">نماذج حقيقية لشهادات التقدير والتميز التي حصدها طلاب وطالبات منصة ذكاء بعد إتمام شروحات المنهج واجتياز الاختبارات بنجاح.</p>
+      </div>
+
+      <div class="certificates-slider-container">
+        <button class="slider-btn prev" id="certsPrev" aria-label="السابق"><i class="fas fa-chevron-right"></i></button>
+        <button class="slider-btn next" id="certsNext" aria-label="التالي"><i class="fas fa-chevron-left"></i></button>
+
+        <div class="certificates-slider-wrapper">
+          <div class="certificates-track" id="certsTrack">
+
+            <div class="cert-card-item">
+              <div class="cert-card-inner">
+                <div class="cert-badge-header"><i class="fas fa-award"></i> شهادة تفوق واجتياز</div>
+                <div class="cert-img-wrap">
+                  <img src="images/certificates/1.webp" alt="شهادة تفوق طالب 1" loading="lazy">
+                </div>
+                <div class="cert-card-footer">
+                  <span class="cert-student-label"><i class="fas fa-check-circle"></i> معتمد وموثق</span>
+                  <button class="btn-zoom-cert"><i class="fas fa-search-plus"></i> تكبير الشهادة</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="cert-card-item">
+              <div class="cert-card-inner">
+                <div class="cert-badge-header"><i class="fas fa-award"></i> شهادة تفوق واجتياز</div>
+                <div class="cert-img-wrap">
+                  <img src="images/certificates/2.webp" alt="شهادة تفوق طالب 2" loading="lazy">
+                </div>
+                <div class="cert-card-footer">
+                  <span class="cert-student-label"><i class="fas fa-check-circle"></i> معتمد وموثق</span>
+                  <button class="btn-zoom-cert"><i class="fas fa-search-plus"></i> تكبير الشهادة</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="cert-card-item">
+              <div class="cert-card-inner">
+                <div class="cert-badge-header"><i class="fas fa-award"></i> شهادة تفوق واجتياز</div>
+                <div class="cert-img-wrap">
+                  <img src="images/certificates/4.webp" alt="شهادة تفوق طالب 4" loading="lazy">
+                </div>
+                <div class="cert-card-footer">
+                  <span class="cert-student-label"><i class="fas fa-check-circle"></i> معتمد وموثق</span>
+                  <button class="btn-zoom-cert"><i class="fas fa-search-plus"></i> تكبير الشهادة</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="cert-card-item">
+              <div class="cert-card-inner">
+                <div class="cert-badge-header"><i class="fas fa-award"></i> شهادة تفوق واجتياز</div>
+                <div class="cert-img-wrap">
+                  <img src="images/certificates/5.webp" alt="شهادة تفوق طالب 5" loading="lazy">
+                </div>
+                <div class="cert-card-footer">
+                  <span class="cert-student-label"><i class="fas fa-check-circle"></i> معتمد وموثق</span>
+                  <button class="btn-zoom-cert"><i class="fas fa-search-plus"></i> تكبير الشهادة</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="cert-card-item">
+              <div class="cert-card-inner">
+                <div class="cert-badge-header"><i class="fas fa-award"></i> شهادة تفوق واجتياز</div>
+                <div class="cert-img-wrap">
+                  <img src="images/certificates/6.webp" alt="شهادة تفوق طالب 6" loading="lazy">
+                </div>
+                <div class="cert-card-footer">
+                  <span class="cert-student-label"><i class="fas fa-check-circle"></i> معتمد وموثق</span>
+                  <button class="btn-zoom-cert"><i class="fas fa-search-plus"></i> تكبير الشهادة</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="cert-card-item">
+              <div class="cert-card-inner">
+                <div class="cert-badge-header"><i class="fas fa-award"></i> شهادة تفوق واجتياز</div>
+                <div class="cert-img-wrap">
+                  <img src="images/certificates/7.webp" alt="شهادة تفوق طالب 7" loading="lazy">
+                </div>
+                <div class="cert-card-footer">
+                  <span class="cert-student-label"><i class="fas fa-check-circle"></i> معتمد وموثق</span>
+                  <button class="btn-zoom-cert"><i class="fas fa-search-plus"></i> تكبير الشهادة</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="slider-controls-standalone" id="certsDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       End of Year Celebration Video Section (فيديو حفل ختام العام وتكريم الطلاب)
+       ========================================================================== -->
+  <section class="py-section celebration-video-section" id="celebration">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge"><i class="fas fa-award"></i> احتفالات وتكريم الطلاب</span>
+        <h2 class="section-title">حفل ختام العام الدراسي وتكريم متفوقي منصة ذكاء</h2>
+        <p class="section-subtitle">لحظات لا تُنسى وفرحة غامرة تكللت بالنجاح والتفوق.. نعتز بمشاركة طلابنا وأولياء أمورهم بهجة ختام العام الدراسي والتميز في المنهج السعودي.</p>
+      </div>
+
+      <div class="celebration-player-container">
+        <div class="celebration-video-card">
+          <div class="video-wrapper">
+            <video
+              id="celebrationVideo"
+              class="celebration-video-element"
+              preload="none"
+              muted
+              playsinline
+              loop
+              poster="images/bannar.webp"
+            >
+              <source src="images/video_2026-08-22_23-52-11.mp4" type="video/mp4">
+              متصفحك لا يدعم تشغيل الفيديو.
+            </video>
+
+            <!-- Video Status Floating Pill -->
+            <div class="video-live-badge">
+              <span class="video-pulse-dot"></span>
+              <span>حفل ختام العام الدراسي</span>
+            </div>
+
+            <!-- Video Overlay Controls -->
+            <div class="video-custom-overlay" id="videoOverlay">
+              <button class="video-action-btn btn-play-toggle" id="videoPlayToggle" aria-label="تشغيل / إيقاف">
+                <i class="fas fa-play"></i>
+              </button>
+
+              <button class="video-action-btn btn-sound-toggle" id="videoSoundToggle" aria-label="كتم / تشغيل الصوت">
+                <i class="fas fa-volume-mute"></i>
+                <span id="soundToggleText">تشغيل الصوت</span>
+              </button>
+
+              <button class="video-action-btn btn-fullscreen" id="videoFullscreenBtn" aria-label="ملء الشاشة">
+                <i class="fas fa-expand"></i>
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Why Thakaa Platform (مزايا المنصة)
+       ========================================================================== -->
+  <section class="py-section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">مميزات منصة ذكاء</span>
+        <h2 class="section-title">بيئة تعليمية متكاملة تتوافق مع رؤية 2030</h2>
+        <p class="section-subtitle">نضع بين يديك تجربة تعليمية مبتكرة تجمع بين دقة المنهج السعودي وسهولة الوسائل الرقمية الحديثة.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.75rem;">
+        <div style="background: white; padding: 2rem; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border: 1px solid var(--border-color); text-align: center;">
+          <div style="width: 60px; height: 60px; border-radius: 50%; background: rgba(13,71,161,0.1); color: var(--primary-blue); display: inline-flex; align-items: center; justify-content: center; font-size: 1.75rem; margin-bottom: 1rem;">
+            <i class="fas fa-book-open"></i>
+          </div>
+          <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 8px;">المنهج السعودي المعتمد</h3>
+          <p style="color: var(--text-secondary); font-size: 0.95rem;">محتوى تعليمي محدث يتطابق بنسبة 100% مع المقررات الدراسية الصادرة من وزارة التعليم.</p>
+        </div>
+
+        <div style="background: white; padding: 2rem; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border: 1px solid var(--border-color); text-align: center;">
+          <div style="width: 60px; height: 60px; border-radius: 50%; background: rgba(255,111,0,0.1); color: var(--secondary-orange); display: inline-flex; align-items: center; justify-content: center; font-size: 1.75rem; margin-bottom: 1rem;">
+            <i class="fas fa-tasks"></i>
+          </div>
+          <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 8px;">اختبارات متدرجة الصعوبة</h3>
+          <p style="color: var(--text-secondary); font-size: 0.95rem;">أسئلة قياسية مصممة بمستويات (سهل، متوسط، متقدم) لرفع جاهزية الطالب للاختبارات الفترية والنهائية.</p>
+        </div>
+
+        <div style="background: white; padding: 2rem; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border: 1px solid var(--border-color); text-align: center;">
+          <div style="width: 60px; height: 60px; border-radius: 50%; background: rgba(212,175,55,0.15); color: #b78103; display: inline-flex; align-items: center; justify-content: center; font-size: 1.75rem; margin-bottom: 1rem;">
+            <i class="fas fa-award"></i>
+          </div>
+          <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 8px;">شهادات تفوق فورية</h3>
+          <p style="color: var(--text-secondary); font-size: 0.95rem;">نظام تحفيزي يمنح الطالب شهادة تفوق قابلة للتحميل والحفظ فور اجتيازه الاختبار الأكاديمي.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Parents Testimonials & Reviews Slider Section (آراء وانطباعات أولياء الأمور)
+       ========================================================================== -->
+  <section class="py-section reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">ثقة ورضا أولياء الأمور</span>
+        <h2 class="section-title">آراء وانطباعات أولياء الأمور والطلاب في منصة ذكاء</h2>
+        <p class="section-subtitle">تجارب حقيقية ورسائل شكر نفخر بها من عائلات وأولياء أمور أبنائنا الطلاب في مختلف مناطق المملكة.</p>
+      </div>
+
+      <div style="position: relative;">
+        <!-- Slider Navigation Buttons -->
+        <button class="slider-btn prev" id="reviewsPrev" aria-label="السابق" style="right: -20px; background: rgba(13, 71, 161, 0.85);"><i class="fas fa-chevron-right"></i></button>
+        <button class="slider-btn next" id="reviewsNext" aria-label="التالي" style="left: -20px; background: rgba(13, 71, 161, 0.85);"><i class="fas fa-chevron-left"></i></button>
+
+        <div class="reviews-slider-wrapper">
+          <div class="reviews-track" id="reviewsTrack">
+
+            <div class="review-card-item">
+              <div class="review-card-inner">
+                <div class="review-badge-header"><i class="fas fa-star"></i> تجربة ممتازة</div>
+                <div class="review-img-wrap">
+                  <img src="images/reviews/1.webp" alt="رأي ولي أمر 1" loading="lazy">
+                </div>
+                <div class="review-card-body">
+                  <span style="font-size:0.88rem; font-weight:800; color:var(--primary-blue);"><i class="fas fa-quote-right" style="color:var(--secondary-orange); margin-left:6px;"></i> رأي ولي أمر</span>
+                  <button class="btn-zoom-review" data-img-src="images/reviews/1.webp"><i class="fas fa-search-plus"></i> تكبير الرأي</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="review-card-item">
+              <div class="review-card-inner">
+                <div class="review-badge-header"><i class="fas fa-star"></i> تجربة ممتازة</div>
+                <div class="review-img-wrap">
+                  <img src="images/reviews/2.webp" alt="رأي ولي أمر 2" loading="lazy">
+                </div>
+                <div class="review-card-body">
+                  <span style="font-size:0.88rem; font-weight:800; color:var(--primary-blue);"><i class="fas fa-quote-right" style="color:var(--secondary-orange); margin-left:6px;"></i> رأي ولي أمر</span>
+                  <button class="btn-zoom-review" data-img-src="images/reviews/2.webp"><i class="fas fa-search-plus"></i> تكبير الرأي</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="review-card-item">
+              <div class="review-card-inner">
+                <div class="review-badge-header"><i class="fas fa-star"></i> تجربة ممتازة</div>
+                <div class="review-img-wrap">
+                  <img src="images/reviews/3.webp" alt="رأي ولي أمر 3" loading="lazy">
+                </div>
+                <div class="review-card-body">
+                  <span style="font-size:0.88rem; font-weight:800; color:var(--primary-blue);"><i class="fas fa-quote-right" style="color:var(--secondary-orange); margin-left:6px;"></i> رأي ولي أمر</span>
+                  <button class="btn-zoom-review" data-img-src="images/reviews/3.webp"><i class="fas fa-search-plus"></i> تكبير الرأي</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="review-card-item">
+              <div class="review-card-inner">
+                <div class="review-badge-header"><i class="fas fa-star"></i> تجربة ممتازة</div>
+                <div class="review-img-wrap">
+                  <img src="images/reviews/4.webp" alt="رأي ولي أمر 4" loading="lazy">
+                </div>
+                <div class="review-card-body">
+                  <span style="font-size:0.88rem; font-weight:800; color:var(--primary-blue);"><i class="fas fa-quote-right" style="color:var(--secondary-orange); margin-left:6px;"></i> رأي ولي أمر</span>
+                  <button class="btn-zoom-review" data-img-src="images/reviews/4.webp"><i class="fas fa-search-plus"></i> تكبير الرأي</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="review-card-item">
+              <div class="review-card-inner">
+                <div class="review-badge-header"><i class="fas fa-star"></i> تجربة ممتازة</div>
+                <div class="review-img-wrap">
+                  <img src="images/reviews/5.webp" alt="رأي ولي أمر 5" loading="lazy">
+                </div>
+                <div class="review-card-body">
+                  <span style="font-size:0.88rem; font-weight:800; color:var(--primary-blue);"><i class="fas fa-quote-right" style="color:var(--secondary-orange); margin-left:6px;"></i> رأي ولي أمر</span>
+                  <button class="btn-zoom-review" data-img-src="images/reviews/5.webp"><i class="fas fa-search-plus"></i> تكبير الرأي</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="review-card-item">
+              <div class="review-card-inner">
+                <div class="review-badge-header"><i class="fas fa-star"></i> تجربة ممتازة</div>
+                <div class="review-img-wrap">
+                  <img src="images/reviews/6.webp" alt="رأي ولي أمر 6" loading="lazy">
+                </div>
+                <div class="review-card-body">
+                  <span style="font-size:0.88rem; font-weight:800; color:var(--primary-blue);"><i class="fas fa-quote-right" style="color:var(--secondary-orange); margin-left:6px;"></i> رأي ولي أمر</span>
+                  <button class="btn-zoom-review" data-img-src="images/reviews/6.webp"><i class="fas fa-search-plus"></i> تكبير الرأي</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="review-card-item">
+              <div class="review-card-inner">
+                <div class="review-badge-header"><i class="fas fa-star"></i> تجربة ممتازة</div>
+                <div class="review-img-wrap">
+                  <img src="images/reviews/7.webp" alt="رأي ولي أمر 7" loading="lazy">
+                </div>
+                <div class="review-card-body">
+                  <span style="font-size:0.88rem; font-weight:800; color:var(--primary-blue);"><i class="fas fa-quote-right" style="color:var(--secondary-orange); margin-left:6px;"></i> رأي ولي أمر</span>
+                  <button class="btn-zoom-review" data-img-src="images/reviews/7.webp"><i class="fas fa-search-plus"></i> تكبير الرأي</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="review-card-item">
+              <div class="review-card-inner">
+                <div class="review-badge-header"><i class="fas fa-star"></i> تجربة ممتازة</div>
+                <div class="review-img-wrap">
+                  <img src="images/reviews/8.webp" alt="رأي ولي أمر 8" loading="lazy">
+                </div>
+                <div class="review-card-body">
+                  <span style="font-size:0.88rem; font-weight:800; color:var(--primary-blue);"><i class="fas fa-quote-right" style="color:var(--secondary-orange); margin-left:6px;"></i> رأي ولي أمر</span>
+                  <button class="btn-zoom-review" data-img-src="images/reviews/8.webp"><i class="fas fa-search-plus"></i> تكبير الرأي</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="slider-controls-standalone" id="reviewsDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Footer Section
+       ========================================================================== -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <img src="images/logo.png" alt="لوجو منصة ذكاء" style="height: 52px; background: white; border-radius: 50%; padding: 3px;">
+            <div>
+              <span style="font-size: 1.3rem; font-weight: 800; color: white;">منصة ذكاء التعليمية</span>
+              <div style="font-size: 0.8rem; color: var(--secondary-orange); font-weight: 700;">تعلم بذكاء .. وتفوق بثقة</div>
+            </div>
+          </div>
+          <p>
+            المنصة الأولى المخصصة لخدمة الطلاب وأولياء الأمور في المملكة العربية السعودية لجميع المراحل الدراسية من الابتدائي وحتى الثانوي.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">المراحل التعليمية</h4>
+          <div class="footer-links">
+            <a href="#stages">المرحلة الابتدائية (1-6)</a>
+            <a href="#stages">المرحلة المتوسطة (1-3)</a>
+            <a href="#stages">المرحلة الثانوية (مسارات)</a>
+            <a href="#stages">اختبارات الكفايات والشهادات</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">روابط سريعة</h4>
+          <div class="footer-links">
+            <a href="#parents">نماذج أولياء الأمور</a>
+            <a href="#features">لماذا منصة ذكاء؟</a>
+            <a href="javascript:void(0)" onclick="openBookingModal('استفسار عام', 'المنهج السعودي')">حجز مادة عبر الواتساب</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">التواصل والحجز المباشر</h4>
+          <p style="font-size: 0.9rem; color: #cbd5e1; margin-bottom: 10px;">
+            المشرف الأكاديمي متاح فوراً للإجابة عن جميع استفساراتكم وحجز المواد:
+          </p>
+          <a href="https://wa.me/201040868935" target="_blank" class="btn-whatsapp-action">
+            <span class="wa-icon-3d"><i class="fab fa-whatsapp"></i></span>
+            <span>تواصل معنا عبر الواتساب</span>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        جميع الحقوق محفوظة © 2026 لمنصة ذكاء التعليمية (هوية سعودية معتمدة).
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODAL 1: Quiz Modal (نافذة الاختبار التفاعلي)
+       ========================================================================== -->
+  <div class="modal-backdrop" id="quizModal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 class="modal-title" id="quizSubjectTitle">اختبار المادة</h3>
+        <button class="modal-close-btn" id="quizModalClose">&times;</button>
+      </div>
+      <div class="modal-body">
+
+        <!-- Quiz Content -->
+        <div id="quizQuestionsContent">
+          <div class="quiz-progress-bar">
+            <div class="quiz-progress-fill" id="quizProgressBar"></div>
+          </div>
+
+          <div class="quiz-question-box">
+            <span class="quiz-badge" id="quizQuestionBadge">السؤال 1</span>
+            <div class="quiz-question-text" id="quizQuestionText">جاري تحميل السؤال...</div>
+          </div>
+
+          <div class="quiz-options-list" id="quizOptionsList"></div>
+
+          <div class="quiz-actions-footer">
+            <button class="btn-secondary" id="quizPrevBtn" style="display: none;">
+              <i class="fas fa-arrow-right"></i> <span>السابق</span>
+            </button>
+            <button class="btn-primary" id="quizNextBtn">
+              <span>التالي</span> <i class="fas fa-arrow-left"></i>
+            </button>
+            <button class="btn-primary" id="quizSubmitBtn" style="display: none; background: linear-gradient(135deg, #2e7d32, #1b5e20);">
+              <span>إنهاء الاختبار</span> <i class="fas fa-check-circle"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Quiz Results Screen -->
+        <div id="quizResultsBox" style="display: none; text-align: center; padding: 1rem 0;">
+          <div style="font-size: 1.1rem; color: #64748b; margin-bottom: 4px;">نسبة التحصيل في الاختبار:</div>
+          <div id="quizScorePercentage" style="font-size: 3.5rem; font-weight: 900; color: var(--primary-blue); line-height: 1;">0%</div>
+
+          <div id="quizResultStatus" style="margin: 1.25rem 0;"></div>
+
+          <div id="studentNameInputWrap" style="display: none; background: #f8fafc; padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-color); margin-top: 1rem;">
+            <label for="studentNameInput" style="display: block; font-weight: 800; margin-bottom: 8px; color: var(--primary-blue);">
+              اكتب اسمك الكريِم كما تحب أن يظهر على الشهادة:
+            </label>
+            <input type="text" id="studentNameInput" class="form-control" placeholder="مثال: أحمد محمد عبد الله الشهري" style="text-align: center; font-size: 1.1rem; font-weight: 700; margin-bottom: 12px;">
+            <button class="btn-primary" id="generateCertBtn" style="width: 100%; justify-content: center;">
+              <i class="fas fa-file-invoice"></i> اصدار الشهادة الرسمية وتنزيلها
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL 2: Certificate Preview & Download Modal (شهادة الفخر والتقدير)
+       ========================================================================== -->
+  <div class="modal-backdrop" id="certModal">
+    <div class="modal-container" style="max-width: 860px;">
+      <div class="modal-header">
+        <h3 class="modal-title">شهادة إنجاز وتشجيع</h3>
+        <button class="modal-close-btn" id="certModalClose">&times;</button>
+      </div>
+      <div class="modal-body" style="text-align: center;">
+
+        <div class="certificate-preview-box">
+          <canvas id="certificateCanvas"></canvas>
+        </div>
+
+        <div style="display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap;">
+          <button class="btn-primary" id="downloadPdfBtn" style="background: linear-gradient(135deg, #c62828, #d32f2f); box-shadow: 0 4px 14px rgba(198, 40, 40, 0.3);">
+            <i class="fas fa-file-pdf"></i> تحميل الشهادة (PDF)
+          </button>
+          <button class="btn-primary" id="downloadCertBtn">
+            <i class="fas fa-image"></i> حفظ كصورة (PNG)
+          </button>
+          <button class="btn-secondary" id="printCertBtn" onclick="printCurrentCertificate()">
+            <i class="fas fa-print"></i> طباعة فورية
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL 3: Direct WhatsApp Booking Modal (زر الحجز لكل مادة ومرحلة)
+       ========================================================================== -->
+  <div class="modal-backdrop" id="bookingModal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 class="modal-title">حجز مادة دراسية عبر الواتساب</h3>
+        <button class="modal-close-btn" id="bookingModalClose">&times;</button>
+      </div>
+      <div class="modal-body">
+
+        <p style="font-size: 0.95rem; color: #64748b; margin-bottom: 1.25rem;">
+          قم بإدخال بياناتك لحجز المادة والمرحلة، وسيتم توجيه الرسالة مباشرة للمشرف الأكاديمي عبر الواتساب.
+        </p>
+
+        <form id="bookingForm">
+          <div class="form-group">
+            <label for="bookingStudentName">اسم الطالب / الطالبة *</label>
+            <input type="text" id="bookingStudentName" class="form-control" placeholder="أدخل الاسم الكلي للطالب" required>
+          </div>
+
+          <div class="form-group">
+            <label for="bookingSubject">المادة المطلوبة *</label>
+            <select id="bookingSubject" class="form-control">
+              <option value="الرياضيات">الرياضيات</option>
+              <option value="العلوم">العلوم</option>
+              <option value="لغتي / اللغة العربية">لغتي / اللغة العربية</option>
+              <option value="الدراسات الإسلامية">الدراسات الإسلامية</option>
+              <option value="الدراسات الاجتماعية">الدراسات الاجتماعية</option>
+              <option value="اللغة الإنجليزية">اللغة الإنجليزية</option>
+              <option value="الفيزياء">الفيزياء</option>
+              <option value="الكيمياء">الكيمياء</option>
+              <option value="الأحياء">الأحياء</option>
+              <option value="التفكير الناقد">التفكير الناقد</option>
+              <option value="التقنية الرقمية والذكاء الاصطناعي">التقنية الرقمية والذكاء الاصطناعي</option>
+              <option value="جميع المواد الدراسية">جميع المواد الدراسية</option>
+              <optgroup label="برامج التأهيل والقبول الجامعي">
+                <option value="دورة اختبار الآيلتس IELTS">دورة اختبار الآيلتس IELTS</option>
+                <option value="دورة اختبارات القدرات (كمي ولفظي)">دورة اختبارات القدرات (كمي ولفظي)</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="bookingGrade">المرحلة والصف الدراسي *</label>
+            <select id="bookingGrade" class="form-control">
+              <optgroup label="المرحلة الابتدائية">
+                <option value="الصف الأول الابتدائي">الصف الأول الابتدائي</option>
+                <option value="الصف الثاني الابتدائي">الصف الثاني الابتدائي</option>
+                <option value="الصف الثالث الابتدائي">الصف الثالث الابتدائي</option>
+                <option value="الصف الرابع الابتدائي">الصف الرابع الابتدائي</option>
+                <option value="الصف الخامس الابتدائي">الصف الخامس الابتدائي</option>
+                <option value="الصف السادس الابتدائي">الصف السادس الابتدائي</option>
+              </optgroup>
+              <optgroup label="المرحلة المتوسطة">
+                <option value="الصف الأول المتوسط">الصف الأول المتوسط</option>
+                <option value="الصف الثاني المتوسط">الصف الثاني المتوسط</option>
+                <option value="الصف الثالث المتوسط">الصف الثالث المتوسط</option>
+              </optgroup>
+              <optgroup label="المرحلة الثانوية">
+                <option value="الصف الأول الثانوي">الصف الأول الثانوي</option>
+                <option value="الصف الثاني الثانوي (مسارات)">الصف الثاني الثانوي (مسارات)</option>
+                <option value="الصف الثالث الثانوي (مسارات)">الصف الثالث الثانوي (مسارات)</option>
+              </optgroup>
+              <optgroup label="برامج التأهيل والقبول الجامعي">
+                <option value="تأهيل جامعي دولي (IELTS)">تأهيل جامعي دولي (IELTS)</option>
+                <option value="القدرات والتحصيلي (ثانوي / خريجين)">القدرات والتحصيلي (ثانوي / خريجين)</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <button type="submit" class="btn-whatsapp-full" style="margin-top: 14px;">
+            <span class="wa-icon-3d"><i class="fab fa-whatsapp"></i></span>
+            <span>إرسال الحجز فوراً عبر الواتساب</span>
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/reviews-slider.js"></script>
+  <script src="js/certificates-slider.js"></script>
+  <script src="js/certificate.js"></script>
+  <script src="js/quiz.js"></script>
+  <script src="js/parent-forms.js"></script>
+  <script src="js/whatsapp-booking.js"></script>
+
+  <script>
+    // التحكم في القائمة المتجاوبة للشاشات الصغيرة (Mobile Drawer)
+    const mobileToggle = document.getElementById('mobileNavToggle');
+    const navMenu = document.getElementById('navMenu');
+    const navBackdrop = document.getElementById('navBackdrop');
+    const toggleIcon = mobileToggle ? mobileToggle.querySelector('i') : null;
+
+    function openMobileMenu() {
+      navMenu.classList.add('active');
+      if (navBackdrop) navBackdrop.classList.add('active');
+      if (mobileToggle) mobileToggle.classList.add('active');
+      if (toggleIcon) {
+        toggleIcon.classList.remove('fa-bars');
+        toggleIcon.classList.add('fa-times');
+      }
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMobileMenu() {
+      if (!navMenu) return;
+      navMenu.classList.remove('active');
+      if (navBackdrop) navBackdrop.classList.remove('active');
+      if (mobileToggle) mobileToggle.classList.remove('active');
+      if (toggleIcon) {
+        toggleIcon.classList.remove('fa-times');
+        toggleIcon.classList.add('fa-bars');
+      }
+      document.body.style.overflow = '';
+    }
+
+    if (mobileToggle && navMenu) {
+      mobileToggle.addEventListener('click', () => {
+        if (navMenu.classList.contains('active')) {
+          closeMobileMenu();
+        } else {
+          openMobileMenu();
+        }
+      });
+
+      if (navBackdrop) {
+        navBackdrop.addEventListener('click', closeMobileMenu);
+      }
+
+      // إغلاق القائمة عند الضغط على أي رابط
+      navMenu.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          closeMobileMenu();
+        });
+      });
+
+      // إغلاق القائمة عند الضغط على مفتاح Esc
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && navMenu.classList.contains('active')) {
+          closeMobileMenu();
+        }
+      });
+    }
+
+    // تتبع موقع التمرير وتحديث الرابط النشط تلقائياً (ScrollSpy)
+    const navLinks = document.querySelectorAll('.nav-menu .nav-link');
+    const sections = document.querySelectorAll('section[id], header[id]');
+
+    function updateActiveNavLink() {
+      const scrollPos = window.scrollY + 120;
+
+      sections.forEach(section => {
+        const top = section.offsetTop;
+        const height = section.offsetHeight;
+        const id = section.getAttribute('id');
+
+        if (scrollPos >= top && scrollPos < top + height) {
+          navLinks.forEach(link => {
+            if (link.getAttribute('href') === `#${id}`) {
+              link.classList.add('active');
+            } else {
+              link.classList.remove('active');
+            }
+          });
+        }
+      });
+    }
+
+    window.addEventListener('scroll', updateActiveNavLink, { passive: true });
+    window.addEventListener('load', updateActiveNavLink);
+
+    // إخفاء شاشة التحميل بانسيابية بعد إعطاء مهلة كافية لظهور الشعار والأنيميشن
+    window.addEventListener('load', () => {
+      const preloader = document.getElementById('sitePreloader');
+      if (preloader) {
+        setTimeout(() => {
+          preloader.classList.add('fade-out');
+          setTimeout(() => {
+            preloader.style.display = 'none';
+          }, 600);
+        }, 1400);
+      }
+    });
+
+    // صمام أمان لإخفاء اللودر بعد 3.5 ثوان كحد أقصى
+    setTimeout(() => {
+      const preloader = document.getElementById('sitePreloader');
+      if (preloader && !preloader.classList.contains('fade-out')) {
+        preloader.classList.add('fade-out');
+        setTimeout(() => {
+          preloader.style.display = 'none';
+        }, 600);
+      }
+    }, 3500);
+
+    // ==========================================================================
+    // التحكم الذكي في فيديو حفل ختام العام (Lazy Autoplay & Controls)
+    // ==========================================================================
+    const celebVideo = document.getElementById('celebrationVideo');
+    const videoPlayToggle = document.getElementById('videoPlayToggle');
+    const videoSoundToggle = document.getElementById('videoSoundToggle');
+    const soundToggleText = document.getElementById('soundToggleText');
+    const videoFullscreenBtn = document.getElementById('videoFullscreenBtn');
+
+    if (celebVideo) {
+      let isUserPaused = false;
+      let hasPreloaded = false;
+
+      // تشغيل الفيديو تلقائياً عند وصول المستخدم إليه وإيقافه عند مغادرته لتوفير البيانات والبطارية
+      const videoObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            if (!hasPreloaded) {
+              celebVideo.preload = 'auto';
+              hasPreloaded = true;
+            }
+            if (!isUserPaused) {
+              celebVideo.play().catch(() => {});
+              if (videoPlayToggle) videoPlayToggle.innerHTML = '<i class="fas fa-pause"></i>';
+            }
+          } else {
+            celebVideo.pause();
+            if (videoPlayToggle) videoPlayToggle.innerHTML = '<i class="fas fa-play"></i>';
+          }
+        });
+      }, { threshold: 0.35 });
+
+      videoObserver.observe(celebVideo);
+
+      // زر تشغيل / إيقاف
+      if (videoPlayToggle) {
+        videoPlayToggle.addEventListener('click', (e) => {
+          e.stopPropagation();
+          if (celebVideo.paused) {
+            isUserPaused = false;
+            celebVideo.play();
+            videoPlayToggle.innerHTML = '<i class="fas fa-pause"></i>';
+          } else {
+            isUserPaused = true;
+            celebVideo.pause();
+            videoPlayToggle.innerHTML = '<i class="fas fa-play"></i>';
+          }
+        });
+      }
+
+      // النقر على الفيديو مباشرة
+      celebVideo.addEventListener('click', () => {
+        if (celebVideo.paused) {
+          isUserPaused = false;
+          celebVideo.play();
+          if (videoPlayToggle) videoPlayToggle.innerHTML = '<i class="fas fa-pause"></i>';
+        } else {
+          isUserPaused = true;
+          celebVideo.pause();
+          if (videoPlayToggle) videoPlayToggle.innerHTML = '<i class="fas fa-play"></i>';
+        }
+      });
+
+      // زر كتم / تشغيل الصوت
+      if (videoSoundToggle) {
+        videoSoundToggle.addEventListener('click', (e) => {
+          e.stopPropagation();
+          celebVideo.muted = !celebVideo.muted;
+          if (celebVideo.muted) {
+            videoSoundToggle.innerHTML = '<i class="fas fa-volume-mute"></i> <span>تشغيل الصوت</span>';
+            videoSoundToggle.classList.remove('active');
+          } else {
+            videoSoundToggle.innerHTML = '<i class="fas fa-volume-up"></i> <span>كتم الصوت</span>';
+            videoSoundToggle.classList.add('active');
+          }
+        });
+      }
+
+      // زر وضع ملء الشاشة
+      if (videoFullscreenBtn) {
+        videoFullscreenBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          if (celebVideo.requestFullscreen) {
+            celebVideo.requestFullscreen();
+          } else if (celebVideo.webkitRequestFullscreen) {
+            celebVideo.webkitRequestFullscreen();
+          }
+        });
+      }
+    }
+  </script>
+</body>
+</html>
