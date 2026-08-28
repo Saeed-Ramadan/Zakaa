@@ -51,10 +51,16 @@ class CertificateGenerator {
     // 4. رسم شعار المنصة الأصلي (images/logo.png)
     const logoImg = new Image();
     logoImg.onload = () => {
-      // رسم اللوجو في منتصف الجزء العلوي
+      // رسم اللوجو في منتصف الجزء العلوي بظل مجسم 3D
       const logoWidth = 110;
       const logoHeight = 110;
+      ctx.save();
+      ctx.shadowColor = "rgba(13, 71, 161, 0.25)";
+      ctx.shadowBlur = 10;
+      ctx.shadowOffsetX = 0;
+      ctx.shadowOffsetY = 5;
       ctx.drawImage(logoImg, (w - logoWidth) / 2, 55, logoWidth, logoHeight);
+      ctx.restore();
 
       // رسم بقية نصوص الشهادة والختم
       this.drawTextContent({

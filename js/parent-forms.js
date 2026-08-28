@@ -32,31 +32,34 @@ document.addEventListener('DOMContentLoaded', () => {
   parentForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    const parentName = document.getElementById('parentName').value.trim();
     const studentName = document.getElementById('parentStudentName').value.trim();
     const studentStage = document.getElementById('parentStudentStage').value;
-    const parentNotes = document.getElementById('parentNotes').value.trim();
+    const parentSubjectEl = document.getElementById('parentSubject');
+    const parentSubject = parentSubjectEl ? parentSubjectEl.value : '';
 
-    if (!parentName || !studentName) {
+    if (!studentName || !parentSubject) {
       if (window.showToast) {
-        window.showToast('يرجى ملء اسم ولي الأمر واسم الطالب للاستمرار', 'info');
+        window.showToast('يرجى إدخال اسم الطالب واختيار المادة الدراسية للاستمرار', 'info');
       }
       return;
     }
 
-    // إعداد نص إرسال عبر الواتساب لضمان وصول الاستفسار مباشرة من حساب ولي الأمر
+    // إعداد نص إرسال عبر الواتساب لضمان وصول الطلب مباشرة
     const formTypeName = formTitles[formTypeInput.value] || "طلب من ولي أمر";
-    const waMessage = `السلام عليكم، أنا ولي الأمر: ${parentName}
-أرغب في تقديم (${formTypeName})
-اسم الطالب/ة: ${studentName}
-المرحلة/الصف: ${studentStage}
-الملاحظات/الاستفسار: ${parentNotes || 'لا يوجد'}`;
+    const waMessage = `السلام عليكم ورحمة الله وبركاته 👋
+أرغب في تقديم (${formTypeName}) عبر منصة ذكاء التعليمية:
+
+📌 *اسم الطالب/ة:* ${studentName}
+🎓 *المرحلة الدراسية:* ${studentStage}
+📚 *المادة أو البرنامج المطلوب:* ${parentSubject}
+
+يرجى التواصل معي وتزويدي بكافة التفاصيل، شكراً جزيلاً.`;
 
     const encodedMsg = encodeURIComponent(waMessage);
     const waUrl = `https://wa.me/201040868935?text=${encodedMsg}`;
 
     if (window.showToast) {
-      window.showToast('تم استلام طلبكم بنجاح! يتم التحويل للتواصل مع المشرف التربوي...', 'success');
+      window.showToast('تم استلام طلبكم بنجاح! جاري فتح الواتساب للتواصل مع المشرف التربوي...', 'success');
     }
 
     // فتح الواتساب بعد ثانيتين

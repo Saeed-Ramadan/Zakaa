@@ -99,7 +99,7 @@
 
       <div class="hero-text-block">
         <div class="hero-tag">
-          <i class="fas fa-certificate"></i> منصة تعليمية سعودية معتمدة
+          <i class="fas fa-certificate"></i> منصة تعليمية سعودية
         </div>
         <h1 class="hero-title">
           تعلم <span>بذكاء</span>.. وتفوق بثقة وفق المنهج السعودي الرسمي
@@ -289,11 +289,6 @@
             <input type="hidden" id="formTypeInput" value="tracking">
 
             <div class="form-group">
-              <label for="parentName">اسم ولي الأمر الكريم *</label>
-              <input type="text" id="parentName" class="form-control" placeholder="أدخل اسم ولي الأمر الثلاثي" required>
-            </div>
-
-            <div class="form-group">
               <label for="parentStudentName">اسم الطالب / الطالبة *</label>
               <input type="text" id="parentStudentName" class="form-control" placeholder="أدخل اسم الابن أو الابنة" required>
             </div>
@@ -308,8 +303,31 @@
             </div>
 
             <div class="form-group">
-              <label for="parentNotes">تفاصيل الاستفسار أو الطلب</label>
-              <textarea id="parentNotes" class="form-control" placeholder="اكتب أي ملاحظات أو مواد ترغب في متابعة نتائجها..."></textarea>
+              <label for="parentSubject">اسم المادة الدراسية *</label>
+              <select id="parentSubject" class="form-control" required>
+                <option value="" disabled selected>اختر المادة الدراسية أو البرنامج المطلوب</option>
+                <optgroup label="المواد الأساسية">
+                  <option value="الرياضيات">الرياضيات</option>
+                  <option value="العلوم">العلوم</option>
+                  <option value="لغتي / اللغة العربية">لغتي / اللغة العربية</option>
+                  <option value="اللغة الإنجليزية">اللغة الإنجليزية</option>
+                  <option value="الدراسات الاجتماعية">الدراسات الاجتماعية</option>
+                  <option value="الدراسات الإسلامية">الدراسات الإسلامية</option>
+                  <option value="التقنية الرقمية">التقنية الرقمية</option>
+                </optgroup>
+                <optgroup label="المواد العلمية والتخصصية (ثانوي)">
+                  <option value="الفيزياء">الفيزياء</option>
+                  <option value="الكيمياء">الكيمياء</option>
+                  <option value="الأحياء">الأحياء</option>
+                </optgroup>
+                <optgroup label="برامج التأهيل والقدرات">
+                  <option value="دورة اختبارات القدرات (كمي ولفظي)">دورة اختبارات القدرات (كمي ولفظي)</option>
+                  <option value="دورة اختبار التحصيلي">دورة اختبار التحصيلي</option>
+                  <option value="دورة اختبار الآيلتس IELTS">دورة اختبار الآيلتس IELTS</option>
+                  <option value="تأسيس ومعالجة صعوبات التعلم">تأسيس ومعالجة صعوبات التعلم</option>
+                  <option value="جميع المواد الدراسية (متابعة شاملة)">جميع المواد الدراسية (متابعة شاملة)</option>
+                </optgroup>
+              </select>
             </div>
 
             <button type="submit" class="btn-whatsapp-full">
@@ -339,7 +357,7 @@
         <!-- Program 1: IELTS Preparation -->
         <div class="program-card">
           <div class="program-card-badge"><i class="fas fa-globe"></i> تأهيل دولي معتمد</div>
-          
+
           <div class="program-img-wrapper" onclick="if(window.openImageLightbox) openImageLightbox('images/12.webp');">
             <img src="images/12.webp" alt="دورة الاستعداد لاختبار الآيلتس IELTS - منصة ذكاء" loading="lazy" class="program-img">
             <div class="program-zoom-hint"><i class="fas fa-search-plus"></i> انقر للتكبير والمعاينة</div>
@@ -368,7 +386,7 @@
         <!-- Program 2: Qudurat Preparation -->
         <div class="program-card">
           <div class="program-card-badge" style="background: linear-gradient(135deg, #0d47a1 0%, #062b52 100%);"><i class="fas fa-brain"></i> قياس والمنهج السعودي</div>
-          
+
           <div class="program-img-wrapper" onclick="if(window.openImageLightbox) openImageLightbox('images/13.webp');">
             <img src="images/13.webp" alt="دورة تدريب اختبار القدرات كمي ولفظي - منصة ذكاء" loading="lazy" class="program-img">
             <div class="program-zoom-hint"><i class="fas fa-search-plus"></i> انقر للتكبير والمعاينة</div>
@@ -735,8 +753,8 @@
       <div class="footer-grid">
 
         <div class="footer-brand">
-          <div style="display: flex; align-items: center; gap: 10px;">
-            <img src="images/logo.png" alt="لوجو منصة ذكاء" style="height: 52px; background: white; border-radius: 50%; padding: 3px;">
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <img src="images/logo.png" alt="لوجو منصة ذكاء التعليمية" class="footer-logo-3d">
             <div>
               <span style="font-size: 1.3rem; font-weight: 800; color: white;">منصة ذكاء التعليمية</span>
               <div style="font-size: 0.8rem; color: var(--secondary-orange); font-weight: 700;">تعلم بذكاء .. وتفوق بثقة</div>
@@ -769,7 +787,7 @@
         <div>
           <h4 class="footer-title">التواصل والحجز المباشر</h4>
           <p style="font-size: 0.9rem; color: #cbd5e1; margin-bottom: 10px;">
-            المشرف الأكاديمي متاح فوراً للإجابة عن جميع استفساراتكم وحجز المواد:
+            المشرف الأكاديمي متاح للإجابة عن جميع استفساراتكم وحجز المواد:
           </p>
           <a href="https://wa.me/201040868935" target="_blank" class="btn-whatsapp-action">
             <span class="wa-icon-3d"><i class="fab fa-whatsapp"></i></span>
@@ -908,7 +926,6 @@
               <option value="الفيزياء">الفيزياء</option>
               <option value="الكيمياء">الكيمياء</option>
               <option value="الأحياء">الأحياء</option>
-              <option value="التفكير الناقد">التفكير الناقد</option>
               <option value="التقنية الرقمية والذكاء الاصطناعي">التقنية الرقمية والذكاء الاصطناعي</option>
               <option value="جميع المواد الدراسية">جميع المواد الدراسية</option>
               <optgroup label="برامج التأهيل والقبول الجامعي">

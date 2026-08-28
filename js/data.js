@@ -309,6 +309,58 @@ const THAKAA_DATA = {
 
     // ==================== 2. المرحلة المتوسطة ====================
     {
+      id: "sub-m-english",
+      stageId: "intermediate",
+      title: "اللغة الإنجليزية (Super Goal)",
+      term: "الجزء الأول من المقرر",
+      themeColor: "#e91e63",
+      icon: "fa-language",
+      description:
+        "قواعد اللغة (Grammar)، المفردات وتراكيب الجمل، مهارات الاستيعاب والمحادثة.",
+      questions: [
+        {
+          id: 1,
+          difficulty: "سهل",
+          question: "Choose the correct pronoun: 'Ali is a doctor. _____ works in a hospital.'",
+          options: ["She", "He", "They", "We"],
+          correctIndex: 1,
+        },
+        {
+          id: 2,
+          difficulty: "سهل",
+          question: "What is the past tense of the irregular verb 'go'?",
+          options: ["goed", "went", "going", "gone"],
+          correctIndex: 1,
+        },
+        {
+          id: 3,
+          difficulty: "متوسط",
+          question: "Choose the correct sentence in the Present Continuous tense:",
+          options: [
+            "They are playing football now.",
+            "They play football now.",
+            "They played football now.",
+            "They will playing football now.",
+          ],
+          correctIndex: 0,
+        },
+        {
+          id: 4,
+          difficulty: "متوسط",
+          question: "Which comparative adjective correctly completes: 'This car is _____ than that one.'?",
+          options: ["fast", "faster", "fastest", "more faster"],
+          correctIndex: 1,
+        },
+        {
+          id: 5,
+          difficulty: "متقدم",
+          question: "Choose the correct relative pronoun: 'The teacher _____ teaches us English is very kind.'",
+          options: ["which", "who", "where", "whose"],
+          correctIndex: 1,
+        },
+      ],
+    },
+    {
       id: "sub-m-math",
       stageId: "intermediate",
       title: "الرياضيات",
@@ -500,78 +552,7 @@ const THAKAA_DATA = {
         },
       ],
     },
-    {
-      id: "sub-m-critical",
-      stageId: "intermediate",
-      title: "التفكير الناقد",
-      term: "الجزء الأول من المقرر",
-      themeColor: "#00838f",
-      icon: "fa-brain",
-      description:
-        "معايير التفكير الناقد، المغالطات المنطقية، وتحليل الحجج والبراهين.",
-      questions: [
-        {
-          id: 1,
-          difficulty: "سهل",
-          question: "من أولى وأهم خطوات التفكير الناقد عند مواجهة مشكلة هي:",
-          options: [
-            "إصدار الحكم الفوري",
-            "التحقق وجمع البيانات والمعلومات",
-            "تجاهل الآراء الأخرى",
-            "اتباع العاطفة",
-          ],
-          correctIndex: 1,
-        },
-        {
-          id: 2,
-          difficulty: "متوسط",
-          question: "معيار 'الوضوح' في التفكير الناقد يعني:",
-          options: [
-            "أن تكون العبارة مفصلة وطويلة جداً",
-            "أن تكون الفكرة مفهومة ومحددة المعنى بدقة",
-            "أن توافق رأي الأغلبية الساحقة",
-            "أن تكون صعبة التحليل",
-          ],
-          correctIndex: 1,
-        },
-        {
-          id: 3,
-          difficulty: "متوسط",
-          question: "المغالطة المنطقية التي تقوم على مهاجمة شخص الخصم بدلاً من حجته تسمى:",
-          options: [
-            "مغالطة رجل القش",
-            "مغالطة الشخصنة (Ad Hominem)",
-            "مغالطة التعميم المتسرع",
-            "مغالطة المنحدر الزلق",
-          ],
-          correctIndex: 1,
-        },
-        {
-          id: 4,
-          difficulty: "متقدم",
-          question: "يعتمد المفكر الناقد في الوصول إلى الاستنتاجات على:",
-          options: [
-            "الشائعات والتخمين",
-            "الانفعالات والمشاعر اللحظية",
-            "الأدلة والبراهين المنطقية الموثوقة",
-            "الانحياز الشخصي المسبق",
-          ],
-          correctIndex: 2,
-        },
-        {
-          id: 5,
-          difficulty: "متقدم",
-          question: "الفرق الجوهري بين 'الحقيقة' و 'الرأي' هو أن الحقيقة:",
-          options: [
-            "تعتمد على المشاعر والأذواق",
-            "يمكن إثباتها والتحقق منها موضوعياً بالأدلة",
-            "تتغير بتغير الأشخاص دائماً",
-            "لا تحتاج إلى أي برهان",
-          ],
-          correctIndex: 1,
-        },
-      ],
-    },
+
     {
       id: "sub-m-tech",
       stageId: "intermediate",

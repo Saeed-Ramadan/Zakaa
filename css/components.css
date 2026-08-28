@@ -8,7 +8,7 @@
 .hero-section {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #062b52 0%, #0d47a1 60%, #1565c0 100%);
+  background-color: #0d47a1;
   color: var(--text-white);
   padding: 3.5rem 0 5rem;
 }
@@ -316,19 +316,35 @@
   position: absolute;
   top: 10px;
   right: 14px;
-  width: 38px;
-  height: 38px;
-  background: white;
+  width: 42px;
+  height: 42px;
+  background: radial-gradient(circle at 35% 30%, #ffffff 55%, #f1f5f9 100%);
   border-radius: 50%;
   padding: 3px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-  z-index: 2;
+  border: 2px solid rgba(255, 255, 255, 0.95);
+  box-shadow: 
+    0 5px 14px rgba(0, 0, 0, 0.22),
+    0 2px 5px rgba(0, 0, 0, 0.1),
+    inset 0 2px 3px rgba(255, 255, 255, 0.95),
+    inset 0 -2px 4px rgba(13, 71, 161, 0.2);
+  z-index: 3;
+  transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transform: perspective(400px) translateZ(0);
+}
+
+.subject-card:hover .card-logo-badge {
+  transform: perspective(400px) translateY(-2px) rotateY(-10deg) scale(1.1);
+  box-shadow: 
+    0 8px 20px rgba(0, 0, 0, 0.28),
+    0 0 12px rgba(255, 111, 0, 0.35),
+    inset 0 2px 4px rgba(255, 255, 255, 0.95);
 }
 
 .card-logo-badge img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.15));
 }
 
 .subject-icon-wrap {
@@ -521,7 +537,7 @@
 }
 
 .parent-info-card {
-  background: linear-gradient(135deg, #0d47a1 0%, #062b52 100%);
+  background-color: #0d47a1;
   color: white;
   padding: 2.5rem;
   border-radius: var(--radius-lg);
@@ -1459,19 +1475,38 @@ textarea.form-control {
 }
 
 .preloader-logo-img {
-  width: 95px;
-  height: 95px;
+  width: 98px;
+  height: 98px;
   object-fit: contain;
-  background: #ffffff;
+  background: radial-gradient(circle at 35% 30%, #ffffff 50%, #e2e8f0 100%);
   border-radius: 50%;
-  padding: 8px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45), 0 0 25px rgba(13, 71, 161, 0.6);
-  animation: preloaderLogoPulse 2.2s ease-in-out infinite alternate;
+  padding: 6px;
+  border: 3px solid rgba(255, 255, 255, 0.95);
+  box-shadow: 
+    0 16px 36px rgba(0, 0, 0, 0.45),
+    0 0 35px rgba(13, 71, 161, 0.5),
+    0 0 16px rgba(255, 111, 0, 0.4),
+    inset 0 3px 6px rgba(255, 255, 255, 0.95),
+    inset 0 -4px 8px rgba(13, 71, 161, 0.25);
+  animation: preloader3dFloat 2.8s ease-in-out infinite alternate;
 }
 
-@keyframes preloaderLogoPulse {
-  0% { transform: scale(0.96); box-shadow: 0 8px 22px rgba(0,0,0,0.35), 0 0 16px rgba(13,71,161,0.5); }
-  100% { transform: scale(1.05); box-shadow: 0 14px 34px rgba(0,0,0,0.5), 0 0 30px rgba(255,111,0,0.7); }
+@keyframes preloader3dFloat {
+  0% {
+    transform: perspective(600px) translateY(0px) rotateY(-8deg) rotateX(4deg) scale(0.98);
+    box-shadow: 
+      0 10px 25px rgba(0, 0, 0, 0.35),
+      0 0 20px rgba(13, 71, 161, 0.45),
+      inset 0 3px 6px rgba(255, 255, 255, 0.95);
+  }
+  100% {
+    transform: perspective(600px) translateY(-8px) rotateY(8deg) rotateX(-4deg) scale(1.05);
+    box-shadow: 
+      0 22px 45px rgba(0, 0, 0, 0.5),
+      0 0 40px rgba(255, 111, 0, 0.65),
+      0 0 25px rgba(13, 71, 161, 0.6),
+      inset 0 3px 6px rgba(255, 255, 255, 0.95);
+  }
 }
 
 .preloader-title {
